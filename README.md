@@ -7,9 +7,11 @@
 
 ```js
 // 环境
-npm install -g create-react-native-app  # react-native 项目
+npm install -g create-react-native-app
 // 切换到项目
-npm install && npm run start
+npm install && npm start
+// 数据模拟
+cd src/mock && npm start
 ```
 
 ## demo
