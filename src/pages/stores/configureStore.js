@@ -28,7 +28,8 @@ export default function configureStore(initialState) {
 	}
 
 	const store = finalCreateStore(rootReducer, initialState);
-	// 持久化配置 if (typeof self === 'object') 
+	// 持久化配置 
+	// if (typeof self === 'object')
 	persistStore(store, {storage: AsyncStorage});
 
 	if (module.hot) {

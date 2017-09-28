@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import { NavigationActions } from 'react-navigation';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { BackHandler } from 'react-native';
 import { Stacks } from './Stacks';
 import { addNavigationHelpers } from 'react-navigation';
-
+import { Toast } from 'antd-mobile';
 class Router extends Component {
 	constructor(props, context) {
 		super(props, context);
