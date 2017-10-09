@@ -1,16 +1,44 @@
 {
-	"presets": ["babel-preset-expo"],
+	"presets": [
+		"babel-preset-expo"
+	],
 	"plugins": [
 		[
-			"import", 
-			{ 
-				"libraryName": "antd-mobile" 
+			"import",
+			{
+				"libraryName": "antd-mobile"
 			}
+		],
+		[
+			"module-resolver",
+			{
+				"root": ["./src"],
+				"extensions": [".js", ".ios.js", ".android.js"],
+				"alias": {
+					"@css": "./src/css",
+					"@images": "./src/images",
+					"@actions": "./src/pages/actions",
+					"@components": "./src/pages/components",
+					"@constants": "./src/pages/constants",
+					"@containers": "./src/pages/containers",
+					"@middleware": "./src/pages/middleware",
+					"@reducers": "./src/pages/reducers",
+					"@router": "./src/pages/router",
+					"@stores": "./src/pages/stores",
+					"@utils": "./src/pages/utils",
+					"pure-render-decorator": "./src/pages/utils/pure-render-decorator",
+				}
+			}
+		],
+		[
+			"transform-decorators-legacy"
 		]
 	],
 	"env": {
 		"development": {
-			"plugins": ["transform-react-jsx-source"]
+			"plugins": [
+				"transform-react-jsx-source"
+			]
 		}
 	}
 }

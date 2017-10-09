@@ -13,8 +13,10 @@
 - npm install && npm start // 不推荐使用`cnpm`, 会导致异常
 // 数据模拟
 - cd src/mock && npm start
-```
 
+```
+ 
+如果重新设置[路径映射](https://github.com/tleunen/babel-plugin-module-resolver), 你需要强制清理编译缓存`npm start -- --reset-cache`
 ## demo
 
 ![Alt text](https://raw.githubusercontent.com/deot/rn-examples/master/demo.gif)

@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 import { Button } from 'antd-mobile';
 
-import * as creators from '../../../actions/days';
-import Content from '../../../components/Days/Zero/Content';
+import * as creators from '@actions/days';
+import Content from '@components/Days/Zero/Content';
 
 class Container extends React.Component {
 	constructor(...params) {

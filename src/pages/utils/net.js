@@ -51,7 +51,7 @@ const ajax = (url, method, body = {}, localData, options = { noLoading: false })
 			})
 			.catch((error) => {
 				!noLoading && Toast.hide();
-				console.log(error);
+				console.log(error, __DEV__);
 				reject({
 					msg: `返回非200${__DEV__? `，尝试开启模拟数据` : ``}`
 				});

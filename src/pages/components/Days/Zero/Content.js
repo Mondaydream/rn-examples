@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { Button, Toast } from 'antd-mobile';
 import * as types from '../../../constants/actions/days';
-
+import pureRender from '@utils/pure-render-decorator';
+@pureRender
 class Content extends React.Component {
 	constructor(...params) {
 		super(...params);
