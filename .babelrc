@@ -26,7 +26,7 @@
 					"@router": "./src/pages/router",
 					"@stores": "./src/pages/stores",
 					"@utils": "./src/pages/utils",
-					"pure-render-decorator": "./src/pages/utils/pure-render-decorator",
+					"pure-render-decorator": "./src/pages/utils/pure-render-decorator"
 				}
 			}
 		],
